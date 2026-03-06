@@ -394,7 +394,7 @@
 						</toolChain>
 					</folderInfo>
 					<sourceEntries>
-						<entry excluding="image/readme_img0.png|image/readme_img1.jpg|image/readme_img2.jpg|image/readme_img3.jpg|image/readme_img4.jpg|image/readme_img5.gif|simplicity_sdk_2025.6.2/protocol/bluetooth/api/sl_bt.xapi|trashed_modified_files|bt_soc_blinky_freertos_project_cmake|bt_soc_blinky_freertos_project_iar_cmake" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+						<entry excluding="02-app.c|01-app.c|image/readme_img0.png|image/readme_img1.jpg|image/readme_img2.jpg|image/readme_img3.jpg|image/readme_img4.jpg|image/readme_img5.gif|simplicity_sdk_2025.6.2/protocol/bluetooth/api/sl_bt.xapi|trashed_modified_files|bt_soc_blinky_freertos_project_cmake|bt_soc_blinky_freertos_project_iar_cmake" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
 					</sourceEntries>
 				</configuration>
 			</storageModule>
