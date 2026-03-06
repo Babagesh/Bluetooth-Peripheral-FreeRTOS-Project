@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="uc.module.setup.componentSetup.com.silabs.ss.framework.project.toolchain.core.default#com.silabs.ss.tool.ide.arm.toolchain.gnu.cdt:12.2.1.20221205.gcc" propertyScope="project">
   <folder name="image">
-    <file name="readme_img0.png" linked="false" uri="studio:/sdk/app/bluetooth/example/bt_soc_blinky/image/readme_img0.png"/>
-    <file name="readme_img1.jpg" linked="false" uri="studio:/sdk/app/bluetooth/example/bt_soc_blinky/image/readme_img1.jpg"/>
-    <file name="readme_img2.jpg" linked="false" uri="studio:/sdk/app/bluetooth/example/bt_soc_blinky/image/readme_img2.jpg"/>
-    <file name="readme_img3.jpg" linked="false" uri="studio:/sdk/app/bluetooth/example/bt_soc_blinky/image/readme_img3.jpg"/>
-    <file name="readme_img4.jpg" linked="false" uri="studio:/sdk/app/bluetooth/example/bt_soc_blinky/image/readme_img4.jpg"/>
-    <file name="readme_img5.gif" linked="false" uri="studio:/sdk/app/bluetooth/example/bt_soc_blinky/image/readme_img5.gif"/>
+    <file name="readme_img0.png" linked="false" uri="studio:/project/image/readme_img0.png"/>
+    <file name="readme_img1.jpg" linked="false" uri="studio:/project/image/readme_img1.jpg"/>
+    <file name="readme_img2.jpg" linked="false" uri="studio:/project/image/readme_img2.jpg"/>
+    <file name="readme_img3.jpg" linked="false" uri="studio:/project/image/readme_img3.jpg"/>
+    <file name="readme_img4.jpg" linked="false" uri="studio:/project/image/readme_img4.jpg"/>
+    <file name="readme_img5.gif" linked="false" uri="studio:/project/image/readme_img5.gif"/>
   </folder>
   <folder name="simplicity_sdk_2025.6.2">
     <folder name="platform">
@@ -370,6 +370,14 @@
             <file name="ecode.h" uri="studio:/sdk/platform/emdrv/common/inc/ecode.h"/>
           </folder>
         </folder>
+        <folder name="uartdrv">
+          <folder name="src">
+            <file name="uartdrv.c" uri="studio:/sdk/platform/emdrv/uartdrv/src/uartdrv.c"/>
+          </folder>
+          <folder name="inc">
+            <file name="uartdrv.h" uri="studio:/sdk/platform/emdrv/uartdrv/inc/uartdrv.h"/>
+          </folder>
+        </folder>
       </folder>
       <folder name="emlib">
         <folder name="src">
@@ -383,6 +391,7 @@
           <file name="em_prs.c" uri="studio:/sdk/platform/emlib/src/em_prs.c"/>
           <file name="em_system.c" uri="studio:/sdk/platform/emlib/src/em_system.c"/>
           <file name="em_timer.c" uri="studio:/sdk/platform/emlib/src/em_timer.c"/>
+          <file name="em_usart.c" uri="studio:/sdk/platform/emlib/src/em_usart.c"/>
         </folder>
         <folder name="inc">
           <file name="em_burtc.h" uri="studio:/sdk/platform/emlib/inc/em_burtc.h"/>
@@ -409,6 +418,7 @@
           <file name="em_system.h" uri="studio:/sdk/platform/emlib/inc/em_system.h"/>
           <file name="em_system_generic.h" uri="studio:/sdk/platform/emlib/inc/em_system_generic.h"/>
           <file name="em_timer.h" uri="studio:/sdk/platform/emlib/inc/em_timer.h"/>
+          <file name="em_usart.h" uri="studio:/sdk/platform/emlib/inc/em_usart.h"/>
         </folder>
       </folder>
       <folder name="peripheral">
@@ -1131,10 +1141,10 @@
       </folder>
     </folder>
   </folder>
-  <file name="app.c" linked="false" uri="studio:/sdk/app/bluetooth/example/bt_soc_blinky/app.c"/>
-  <file name="app_freertos.c" linked="false" uri="studio:/sdk/app/bluetooth/example/bt_soc_blinky/app_freertos.c"/>
-  <file name="app.h" linked="false" uri="studio:/sdk/app/bluetooth/example/bt_soc_blinky/app.h"/>
-  <file name="readme.md" linked="false" uri="studio:/sdk/app/bluetooth/example/bt_soc_blinky/readme.md"/>
+  <file name="app.c" linked="false" uri="studio:/project/app.c"/>
+  <file name="app_freertos.c" linked="false" uri="studio:/project/app_freertos.c"/>
+  <file name="app.h" linked="false" uri="studio:/project/app.h"/>
+  <file name="readme.md" linked="false" uri="studio:/project/readme.md"/>
   <file name="sl_gatt_service_device_information_override.c" generated="true" linked="false"/>
   <file name="main.c" generated="true" linked="false"/>
   <excludedPath>image/readme_img0.png</excludedPath>
@@ -1214,6 +1224,7 @@
   <includePath uri="studio:/sdk/platform/security/sl_component/sli_crypto/inc"/>
   <includePath uri="studio:/sdk/platform/security/sl_component/sl_protocol_crypto/src"/>
   <includePath uri="studio:/sdk/platform/security/sl_component/sli_psec_osal/inc"/>
+  <includePath uri="studio:/sdk/platform/emdrv/uartdrv/inc"/>
   <includePath uri="studio:/sdk/platform/service/udelay/inc"/>
   <macroDefinition name="EFR32MG24B210F1536IM48"/>
   <macroDefinition name="SL_CODE_COMPONENT_SYSTEM" value="system"/>
@@ -1251,6 +1262,7 @@
   <macroDefinition name="SLI_RADIOAES_REQUIRES_MASKING"/>
   <macroDefinition name="SL_CODE_COMPONENT_SLI_PROTOCOL_CRYPTO" value="sli_protocol_crypto"/>
   <macroDefinition name="SL_CODE_COMPONENT_PSEC_OSAL" value="psec_osal"/>
+  <macroDefinition name="SL_CODE_COMPONENT_UARTDRV" value="uartdrv"/>
   <libraryFile uri="studio:/sdk/protocol/bluetooth/bgcommon/lib/build/gcc/cortex-m33/bgcommon/release/libbgcommon.a"/>
   <libraryFile uri="studio:/sdk/protocol/bluetooth/bgstack/ll/build/gcc/xg24/release/liblinklayer.a"/>
   <libraryFile uri="studio:/sdk/protocol/bluetooth/build/gcc/cortex-m33/ble_host/ble_bgapi/release/libble_bgapi_gatt_server.a"/>
